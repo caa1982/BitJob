@@ -1,31 +1,111 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BitJob</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!-- boostrap Material Design CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
-    <!-- Font Awesome -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>BitJob</title>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+            crossorigin="anonymous">
+      <!-- Boostrap Material Design CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="main.css">
+      <!-- Animate.css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 </head>
+
 <body>
+      <header>
+            <nav class="navbar fixed-top navbar-light navbar-toggleable-sm justify-content-between">
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+                  <a href="#home" class="navbar-brand"><img id="navbarLogo" class="animated fadeInUpBig" src="img/Bitjob_logo.png"></a>
+                  <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
+                        <div>
+                              <!--placeholder to evenly space flexbox items and center links-->
+                        </div>
+                        <ul class="navbar-nav">
+                              <li class="nav-item active">
+                                    <a class="nav-link" href="#home">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#whitepaper">Whitepaper</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#platform">Platform</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#crowdfund">Crowdfund</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#roadmap">Roadmap</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#team">Team</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="https://medium.com/bitjob">Blog</a>
+                              </li>
+                        </ul>
+                        <ul class="nav navbar-nav flex-row">
+                              <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com/bitJobmarket/"><i class="fa fa-facebook"></i></a></li>
+                              <li class="nav-item"><a class="nav-link" target="_blank" href="https://twitter.com/BitJob_Team"><i class="fa fa-twitter"></i></a></li>
+                              <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/bitjobteam?tab=repositories"><i class="fa fa-github"></i></a></li>
+                              <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.linkedin.com/company-beta/18013385/"><i class="fa fa-linkedin"></i></a></li>
+                              <li class="nav-item"><a class="nav-link" target="_blank" href="https://bitjob.slack.com/signup"><i class="fa fa-slack"></i></a></li>
+                              <li class="nav-item"><a class="nav-link" target="_blank" href="#"><i class="fa fa-reddit-alien"></i></a></li>
+                              <li class="nav-item"><a class="nav-link" target="_blank" href="mailto:Info@bitjob.io?Subject=Dear%20bitJob%20Team,"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                  </div>
+            </nav>
 
+      </header>
+      <section id="home">
+            <div id="homeContainer" class="text-center">
+                  <img id="logoHome" class="animated zoomInDown" src="img/Bitjob_logo.png">
+                  <h1>Reshaping Students Freedom <br> to Earn a Living.</h1>
+                  <p>A Decentralized P2P Students Marketplace for Online short-term Jobs, <br> Powered by Ethereum Blockchain.</p>
+            </div>
+      </section>
 
-<!-- Jquery  -->
-<script type="text/javascript src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <!-- Bootstrap tooltips -->
-<script type="text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<!-- Boostrap Material Design Javascript -->
-<script type="text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
+      <section id="whitepaper">
 
+      </section>
+
+      <section id="platform">
+
+      </section>
+
+      <section id="crowdfund">
+
+      </section>
+
+      <section id="roadmap">
+
+      </section>
+
+      <section id="team">
+
+      </section>
+
+      <!-- Jquery  -->
+      <script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+      <!-- Boostrap Material Design Javascript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js "></script>
+      <!-- Custom Javascript -->
+      <script type="text/javascript" src="Javascript/index.js"></script>
 </body>
+
 </html>
