@@ -10,7 +10,7 @@ $(document).ready(function () {
     var RADIUS_SCALE_MAX = 1.5;
 
     // The number of particles that are used to generate the trail
-    var QUANTITY = 25;
+    var QUANTITY = 50;
 
     var canvas;
     var context;
