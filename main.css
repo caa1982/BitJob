@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Raleway');
 
+canvas {
+	background-color: #153354;
+    position:absolute; 
+}
+
 .navbar{
     opacity: 1 !important;
 }
@@ -33,7 +38,7 @@
 
 #homeContainer{
     color: white;
-    margin: 3% !important;
+    position:absolute;
 }
 
 #homeContainer > h1 {
