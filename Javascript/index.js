@@ -2,23 +2,6 @@ $(document).ready(function () {
 
     animatedCss();
 
-    //add active to click navabar
-    $(function () {
-        $("a").click(function () {
-            // remove classes from all
-            $("li").removeClass("active");
-            // add class to the one we clicked
-            $(this).parent().addClass("active");
-        });
-    });
-
-    //add animation
-    $(function () {
-        $("a").on("click", function () {
-            $(this).animateCss("bounce");
-        });
-    });
-
     //scroll down
     function filter(string) {
         return string
@@ -48,18 +31,42 @@ $(document).ready(function () {
 });
 
 //add animateCss to jquery
-    function animatedCss() {
-        $.fn.extend({
-            animateCss: function (animationName) {
-                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                this.addClass('animated ' + animationName).one(animationEnd, function () {
-                    $(this).removeClass('animated ' + animationName);
-                });
-            }
-        });
-    }
-
-    //animate socialMedia
-    $(".fa").on("mouseover", function () {
-        $(this).animateCss("rubberBand");
+function animatedCss() {
+    $.fn.extend({
+        animateCss: function (animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function () {
+                $(this).removeClass('animated ' + animationName);
+            });
+        }
     });
+}
+
+//animate socialMedia
+$(".fa").on("mouseover", function () {
+    $(this).animateCss("rubberBand");
+});
+
+//button mouseover animation
+$("#homeContainer > .btn").on("mouseover", function () {
+     $(this).animateCss("pulse");
+});
+
+//button open link
+$("#homeContainer > .btn").click(function () {
+    if(this.id === "alpha" ){
+        window.open("http://pilot.bitjob.io/pages/index.html");
+    }
+    else{
+        window.open("https://drive.google.com/file/d/0B6VVmGzOdFPBeDVpWVE4Y2xubFE/view");
+    }
+});
+
+//add active to click navabar
+$("a").click(function () {
+    // remove classes from all
+    $("li").removeClass("active");
+    // add class to the one we clicked
+    $(this).parent().addClass("active");
+});
+
