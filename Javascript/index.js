@@ -95,7 +95,7 @@ $(".fa").on("mouseover", function () {
 
 //button mouseover animation
 $("#homeContainer > .btn").on("mouseover", function () {
-    $(this).animateCss("pulse");
+    $(this).animateCss("rubberBand");
 });
 
 //button open link

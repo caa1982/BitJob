@@ -43,22 +43,19 @@ canvas {
     position:absolute;
 }
 
-#homeContainer > h1 {
+h1 {
     font-size: 65px;
     font-family: 'Bad Script', cursive;
 }
 
-#homeContainer > p {
+p {
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
 }
 
 #homeContainer > .btn {
-    color: white !important;
-    border-color: white;
     font-size: 17px;
     border-radius: 25px;
-    font-family: 'Raleway', sans-serif;
 }
 
 i > span{
@@ -88,12 +85,40 @@ i > span{
     width: 100%;
     height: 100vh;
     background-color: #153354;
+    color: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
+
+#roadmapContainer > hr{
+    border: none;
+    height: 1px;
+    width: 70vw;
+    color: white;
+    background-color: white;
+}
+
+#roadmapContainer > img{
+    margin-top: 4%;
+}
+
 
 #team{
     width: 100%;
     height: 100vh;
     background-color: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
 
