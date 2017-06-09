@@ -98,9 +98,15 @@ i > span{
     justify-content: center; 
 }
 
-#roadmapContainer > img{
-    width: 80vw; 
+#roadmapContainer{
+    width: 100vw; 
     height: auto;
+}
+
+#roadmapContainer > img{
+    width: 90vw; 
+    height: auto;   
+    margin: auto;
 }
 
 #roadmapContainer > hr{
