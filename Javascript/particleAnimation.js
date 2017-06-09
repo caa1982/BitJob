@@ -20,7 +20,6 @@ function canvas() {
     sketch.strokeStyle = 'hsla(' + random(0, 120) + ', 100%, 47%, 1)';
   }, 2000);
 
-
   sketch.globalCompositeOperation = 'lighter';
 
   Particle = function () {
