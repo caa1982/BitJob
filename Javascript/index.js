@@ -28,7 +28,11 @@ $(document).ready(function () {
         }
     });
 
+
 });
+
+
+
 
 //add animateCss to jquery
 function animatedCss() {
@@ -42,6 +46,47 @@ function animatedCss() {
     });
 }
 
+//Scroll change color and active link
+$(document).scroll(function () {
+    var white = [$('#whitepaper').position().top, $('#crowdfund').position().top, $('#team').position().top];
+    var blue = [$('#home').position().top, $('#platform').position().top, $('#roadmap').position().top];
+    var scroll_start = $(this).scrollTop();
+    var settings = function (set) {
+        if (set === "white") {
+            $(".nav-link").attr('style', 'color:white !important');
+            $("#navbarLogo").attr('src', 'img/Bitjob_logo_transparant.png');
+        }
+        else {
+            $(".nav-link").attr('style', 'color:#153354 !important');
+            $("#navbarLogo").attr('src', 'img/Bitjob_logo.png');
+        }
+    };
+    if (scroll_start >= blue[0] && scroll_start < white[0]) {
+        settings("white");
+        $("li").removeClass("active");
+        $($('a[href="#home"]')).parent().addClass("active");
+    } else if (scroll_start >= white[0] && scroll_start < blue[1]) {
+        settings("");
+        $("li").removeClass("active");
+        $($('a[href="#whitepaper"]')).parent().addClass("active");
+    } else if (scroll_start >= blue[1] && scroll_start < white[1]) {
+        settings("white");
+        $("li").removeClass("active");
+        $($('a[href="#platform"]')).parent().addClass("active");
+    } else if (scroll_start >= white[1] && scroll_start < blue[2]) {
+        settings("");
+        $("li").removeClass("active");
+        $($('a[href="#crowdfund"]')).parent().addClass("active");
+    } else if (scroll_start >= blue[2] && scroll_start < white[2]) {
+        settings("white");
+        $("li").removeClass("active");
+        $($('a[href="#roadmap"]')).parent().addClass("active");
+    } else {
+        settings("");
+        $("li").removeClass("active");
+        $($('a[href="#team"]')).parent().addClass("active");
+    }
+});
 
 //animate socialMedia
 $(".fa").on("mouseover", function () {
@@ -50,27 +95,17 @@ $(".fa").on("mouseover", function () {
 
 //button mouseover animation
 $("#homeContainer > .btn").on("mouseover", function () {
-     $(this).animateCss("pulse");
+    $(this).animateCss("pulse");
 });
 
 //button open link
 $("#homeContainer > .btn").click(function () {
-    if(this.id === "alpha" ){
+    if (this.id === "alpha") {
         window.open("http://pilot.bitjob.io/pages/index.html");
     }
-    else{
+    else {
         window.open("https://drive.google.com/file/d/0B6VVmGzOdFPBeDVpWVE4Y2xubFE/view");
     }
 });
 
-//add active to click navabar
-$("a").click(function () {
-    // remove classes from all
-    $("li").removeClass("active");
-    // add class to the one we clicked
-    $(this).parent().addClass("active");
-});
 
-
-
-	
