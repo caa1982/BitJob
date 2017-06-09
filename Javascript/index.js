@@ -2,7 +2,9 @@ $(document).ready(function () {
 
     animatedCss();
 
-    //scroll down
+});
+
+ //scroll down
     function filter(string) {
         return string
             .replace(/^\//, '')
@@ -27,12 +29,6 @@ $(document).ready(function () {
             }
         }
     });
-
-
-});
-
-
-
 
 //add animateCss to jquery
 function animatedCss() {
