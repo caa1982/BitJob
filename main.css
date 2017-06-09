@@ -98,10 +98,14 @@ i > span{
     justify-content: center; 
 }
 
+#roadmapContainer{
+    width: 75vw;
+}
+
 #roadmapContainer > hr{
     border: none;
     height: 1px;
-    width: 70vw;
+    width: 60vw;
     color: white;
     background-color: white;
 }
