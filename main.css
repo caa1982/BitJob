@@ -7,6 +7,10 @@ canvas {
     height: 100vh;
 }
 
+.fa-bars{
+    color: white;
+}
+
 .navbar{
     opacity: 1 !important;
 }
@@ -139,5 +143,14 @@ i > span{
     canvas {
         display: none;
     }
+    h1{
+        font-size: 25px;
+    }
+     p{
+        font-size: 10px;
+    }
+    #homeContainer{
+        padding: 3%;
+        }
 }
 

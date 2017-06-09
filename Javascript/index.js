@@ -4,31 +4,31 @@ $(document).ready(function () {
 
 });
 
- //scroll down
-    function filter(string) {
-        return string
-            .replace(/^\//, '')
-            .replace(/(index|default)\.[a-zA-Z]{3,4}$/, '')
-            .replace(/\/$/, '');
-    }
-    $('[href*="#"]').each(function () {
-        if (filter(location.pathname) == filter(this.pathname) &&
-            location.hostname == this.hostname &&
-            this.hash.replace(/#/, '')) {
-            var $targetId = $(this.hash),
-                $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
-            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-            if ($target) {
-                var targetOffset = $target.offset().top;
-                $(this).click(function () {
-                    $('html, body').animate({
-                        scrollTop: targetOffset
-                    }, 1000);
-                    return false;
-                });
-            }
+//scroll down
+function filter(string) {
+    return string
+        .replace(/^\//, '')
+        .replace(/(index|default)\.[a-zA-Z]{3,4}$/, '')
+        .replace(/\/$/, '');
+}
+$('[href*="#"]').each(function () {
+    if (filter(location.pathname) == filter(this.pathname) &&
+        location.hostname == this.hostname &&
+        this.hash.replace(/#/, '')) {
+        var $targetId = $(this.hash),
+            $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+        var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+        if ($target) {
+            var targetOffset = $target.offset().top;
+            $(this).click(function () {
+                $('html, body').animate({
+                    scrollTop: targetOffset
+                }, 1000);
+                return false;
+            });
         }
-    });
+    }
+});
 
 //add animateCss to jquery
 function animatedCss() {
@@ -50,10 +50,12 @@ $(document).scroll(function () {
     var settings = function (set) {
         if (set === "white") {
             $(".nav-link").attr('style', 'color:white !important');
+            $(".fa-bars").attr('style', 'color:white !important');
             $("#navbarLogo").attr('src', 'img/Bitjob_logo_transparant.png');
         }
         else {
             $(".nav-link").attr('style', 'color:#153354 !important');
+            $(".fa-bars").attr('style', 'color:#153354 !important');
             $("#navbarLogo").attr('src', 'img/Bitjob_logo.png');
         }
     };
