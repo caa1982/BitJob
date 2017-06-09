@@ -15,6 +15,11 @@ function canvas() {
 
   particleCount = 1500;
   sketch.strokeStyle = 'hsla(' + random(0, 120) + ', 100%, 47%, 1)';
+  
+  var time = setInterval(function () {
+    sketch.strokeStyle = 'hsla(' + random(0, 120) + ', 100%, 47%, 1)';
+  }, 2000);
+
 
   sketch.globalCompositeOperation = 'lighter';
 
