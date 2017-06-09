@@ -25,6 +25,18 @@ canvas {
     width: auto;
 }
 
+.dropdown-menu{
+    background-color: transparent !important;
+}
+
+.dropdown-item{
+    color: white !important;
+    font-weight:bold;
+}
+.dropdown-item:hover{
+    background-color: transparent !important;
+}
+
 #home{
     width: 100%;
     height: 100vh;

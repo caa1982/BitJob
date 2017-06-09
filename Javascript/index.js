@@ -51,11 +51,13 @@ $(document).scroll(function () {
         if (set === "white") {
             $(".nav-link").attr('style', 'color:white !important');
             $(".fa-bars").attr('style', 'color:white !important');
+            $(".dropdown-item").attr('style', 'color:white !important');
             $("#navbarLogo").attr('src', 'img/Bitjob_logo_transparant.png');
         }
         else {
             $(".nav-link").attr('style', 'color:#153354 !important');
             $(".fa-bars").attr('style', 'color:#153354 !important');
+            $(".dropdown-item").attr('style', 'color:#153354 !important');
             $("#navbarLogo").attr('src', 'img/Bitjob_logo.png');
         }
     };
