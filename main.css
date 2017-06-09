@@ -99,7 +99,7 @@ i > span{
 }
 
 #roadmapContainer{
-    width: 75vw;
+    align-items: center; 
 }
 
 #roadmapContainer > hr{
