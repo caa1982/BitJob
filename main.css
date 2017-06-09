@@ -31,7 +31,8 @@ canvas {
 
 .dropdown-item{
     color: white !important;
-    font-weight:bold;
+    font-size: 16px !important;
+    font-weight:bold !important;
 }
 .dropdown-item:hover{
     background-color: transparent !important;
