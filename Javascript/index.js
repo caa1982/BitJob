@@ -119,14 +119,6 @@ $('.teamSelect').on('click', function () {
     $(this).addClass('box');
     $("#cardContainer").children().addClass("hidden");
     $("." + this.id).removeClass("hidden");
-    if (this.id == "founders") {
-        $("#teamContainer").attr("style", "margin-top: none");
-        $("#team").attr("style", "height: 100vh");
-    } else {
-        $("#teamContainer").attr("style", "margin-top: 12vh");
-        $("#team").attr("style", "height: auto");
-    }
-
 });
 
 
