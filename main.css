@@ -251,13 +251,25 @@ i > span{
     cursor: pointer;
 }
 
-.back > p {
-    margin: 10%;
+#backTitle {
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: 'Bad Script', cursive;
+    font-size: 18px;
+}
+
+#backText{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 19%;
+    font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
 
 #rotateBackBottom{
-     color:gray;
+    color:gray;
  }
 
 #rotateBackBottom > hr{
