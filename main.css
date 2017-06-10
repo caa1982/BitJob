@@ -167,8 +167,8 @@ i > span{
 }
 
 .flip{
-    width: 100%;
-    height: 40vh;
+    width: 250px;
+    height: 350px;
     }
 
 .front, .back{
