@@ -157,6 +157,11 @@ i > span{
     margin-top: 3%;
     } 
 
+.faTeam{
+    color: #153354;
+    font-size: 25px;
+}
+
 .box{
     background-color: rgba(158,158,158,.2);
     padding: 3%;
