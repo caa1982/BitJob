@@ -109,17 +109,24 @@ $("#homeContainer > .btn").click(function () {
 });
 
 //on click collapse navbar
-$('.collapse1').on('click', function(){
+$('.collapse1').on('click', function () {
     $('#collapsingNavbar2').collapse('hide');
 });
 
 //add box on selected team and show team
-$('.teamSelect').on('click', function(){
+$('.teamSelect').on('click', function () {
     $('.teamSelect').removeClass('box');
     $(this).addClass('box');
     $("#cardContainer").children().addClass("hidden");
-    $("."+this.id).removeClass("hidden");
-    
+    $("." + this.id).removeClass("hidden");
+    if (this.id == "founders") {
+        $("#teamContainer").attr("style", "margin-top: none");
+        $("#team").attr("style", "height: 100vh");
+    } else {
+        $("#teamContainer").attr("style", "margin-top: 12vh");
+        $("#team").attr("style", "height: auto");
+    }
+
 });
 
 
