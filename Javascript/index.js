@@ -115,10 +115,13 @@ $('.collapse1').on('click', function(){
     $('#collapsingNavbar2').collapse('hide');
 });
 
-//add box on selected team
+//add box on selected team and show team
 $('.teamSelect').on('click', function(){
     $('.teamSelect').removeClass('box');
     $(this).addClass('box');
+    $("#cardContainer").children().addClass("hidden");
+    $("."+this.id).removeClass("hidden");
+    
 });
 
 

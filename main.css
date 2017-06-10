@@ -167,6 +167,10 @@ i > span{
     cursor:pointer;
 }
 
+.hidden{
+    display: none;
+}
+
 .front > img{
     width: 100px;
     margin-top: 2%;
