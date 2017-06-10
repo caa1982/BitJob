@@ -108,4 +108,9 @@ $("#homeContainer > .btn").click(function () {
     }
 });
 
+//on click toogle navbar
+
+$('.collapse1').click(function(){
+    $('#collapsingNavbar2').collapse('hide');
+});
 
