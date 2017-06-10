@@ -151,7 +151,30 @@ i > span{
     display: flex;
     align-items: center;
     justify-content: center; 
+    }
+
+#cardContainer{
+    margin-top: 3%;
+    } 
+
+.front > img{
+    width: 100px;
 }
+
+.flip{
+    width: 100%;
+    height: 40vh;
+    }
+
+.front, .back{
+    background-color: white;
+    color: #153354;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color:#153354; 
+    height: 200px;
+    cursor: pointer;
+    }
 
 @media screen and (max-width: 480px) {
 

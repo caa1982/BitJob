@@ -4,6 +4,8 @@ $(document).ready(function () {
 
 });
 
+$(".flip").flip();
+
 //scroll down
 function filter(string) {
     return string
@@ -108,9 +110,8 @@ $("#homeContainer > .btn").click(function () {
     }
 });
 
-//on click toogle navbar
-
-$('.collapse1').click(function(){
+//on click collapse navbar
+$('.collapse1').on('click', function(){
     $('#collapsingNavbar2').collapse('hide');
 });
 
