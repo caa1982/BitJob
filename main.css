@@ -54,6 +54,10 @@ canvas {
     justify-content: center; 
 }
 
+.btn-danger{
+    background-color: rgb(227, 190, 66);
+}
+
 #logoHome{
     margin-bottom: 5%;
 }
@@ -79,7 +83,7 @@ p {
 }
 
 i > span{
-    color: red;
+    color: rgb(227, 190, 66);;
 }
 
 #whitepaper{
@@ -163,7 +167,7 @@ i > span{
 }
 
 .faTeam:hover{
-    color: red;
+    color: rgb(227, 190, 66);;
 }
 
 #teamMember > img{
