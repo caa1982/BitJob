@@ -157,6 +157,16 @@ i > span{
     margin-top: 3%;
     } 
 
+.box{
+    background-color: rgba(158,158,158,.2);
+    padding: 3%;
+    cursor:pointer;
+}
+
+.teamSelect:hover{
+    cursor:pointer;
+}
+
 .front > img{
     width: 100px;
     margin-top: 2%;
@@ -171,7 +181,7 @@ i > span{
     height: 350px;
     }
 
-.front, .back{
+.front{
     background-color: white;
     color: #153354;
     border: 2px solid;
@@ -180,6 +190,21 @@ i > span{
     height: 200px;
     cursor: pointer;
     }
+
+.back{
+    background-color: #153354;
+    color: white;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color:white; 
+    height: 200px;
+    cursor: pointer;
+}
+
+.back > p {
+    margin: 10%;
+    font-size: 15px;
+}
 
 @media screen and (max-width: 480px) {
 
