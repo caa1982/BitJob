@@ -179,6 +179,7 @@ i > span{
 .flip{
     width: 250px;
     height: 350px;
+    margin-bottom: 3%;
     }
 
 .front{
@@ -204,6 +205,17 @@ i > span{
 .back > p {
     margin: 10%;
     font-size: 15px;
+}
+
+@media screen and (max-width: 1140px) {
+    #team{
+        height: auto !important;
+    }
+
+     #teamContainer{
+        margin-top: 15vh;
+    }
+  
 }
 
 @media screen and (max-width: 480px) {
