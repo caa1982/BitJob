@@ -260,10 +260,10 @@ i > span{
 }
 
 #backText{
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 19%;
+    margin-bottom: 10%;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
@@ -283,6 +283,10 @@ i > span{
  #rotateBackBottom:hover{
      color:white;
  }
+
+.playingCards{
+    width: 40px;
+}
 
 @media screen and (max-width: 1140px) {
     #team{
