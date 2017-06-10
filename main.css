@@ -159,6 +159,11 @@ i > span{
 
 .front > img{
     width: 100px;
+    margin-top: 2%;
+}
+
+.front > p {
+    font-size: 20px;
 }
 
 .flip{
