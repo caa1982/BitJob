@@ -162,6 +162,37 @@ i > span{
     font-size: 25px;
 }
 
+.faTeam:hover{
+    color: red;
+}
+
+#teamMember > img{
+    width: 140px;
+}
+
+#teamMember > hr{
+    margin-top: -2%;
+    border: none;
+    height: 1px;
+    color: #153354;
+    background-color: #153354;
+    width: 90%;
+}
+
+#teamMemberJob{
+    margin-top: -2%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+#teamMemberName{
+    margin-top: 2%;
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .box{
     background-color: rgba(158,158,158,.2);
     padding: 3%;
@@ -174,15 +205,6 @@ i > span{
 
 .hidden{
     display: none;
-}
-
-.front > img{
-    width: 100px;
-    margin-top: 2%;
-}
-
-.front > p {
-    font-size: 20px;
 }
 
 .flip{
@@ -199,7 +221,25 @@ i > span{
     border-color:#153354; 
     height: 200px;
     cursor: pointer;
+    padding: 3%;
     }
+ 
+#rotateFrontBottom{
+     color:gray;
+ }
+
+#rotateFrontBottom > hr{
+    border: none;
+    height: 1px;
+    color: #153354;
+    background-color: #153354;
+    width: 90%;
+ }
+
+ #rotateFrontBottom:hover{
+     color:#153354;
+ }
+
 
 .back{
     background-color: #153354;
@@ -215,6 +255,22 @@ i > span{
     margin: 10%;
     font-size: 15px;
 }
+
+#rotateBackBottom{
+     color:gray;
+ }
+
+#rotateBackBottom > hr{
+    border: none;
+    height: 1px;
+    color: white;
+    background-color: white;
+    width: 80%;
+ }
+
+ #rotateBackBottom:hover{
+     color:white;
+ }
 
 @media screen and (max-width: 1140px) {
     #team{

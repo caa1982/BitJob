@@ -89,7 +89,7 @@ $(document).scroll(function () {
 });
 
 //animate socialMedia
-$(".fa").on("mouseover", function () {
+$(".faNav").on("mouseover", function () {
     $(this).animateCss("rubberBand");
 });
 
