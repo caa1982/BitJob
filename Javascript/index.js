@@ -92,9 +92,9 @@ $(document).scroll(function () {
 
 //hover navbar
 $("a > span").hover(function () {
-    $(this).addClass("hoverColor"), function(){
-    $(this).removeClass("hoverColor")};
-});
+    $(this).addClass("hoverColor")}, function(){
+    $(this).removeClass("hoverColor")}
+);
 
 //animate socialMedia
 $(".faNav").on("mouseover", function () {
