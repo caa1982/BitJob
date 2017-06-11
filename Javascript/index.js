@@ -52,11 +52,13 @@ $(document).scroll(function () {
     var settings = function (set) {
         if (set === "white") {
             $(".nav-link").attr('style', 'color:white !important');
+            $(".faNav").attr('style', 'color:white !important');
             $(".dropdown-item").attr('style', 'color:white !important');
             $("#navbarLogo").attr('src', 'img/Bitjob_logo_transparant.png');
         }
         else {
             $(".nav-link").attr('style', 'color:#153354 !important');
+            $(".faNav").attr('style', 'color:#153354 !important');
             $(".dropdown-item").attr('style', 'color:#153354 !important');
             $("#navbarLogo").attr('src', 'img/Bitjob_logo.png');
         }
@@ -86,6 +88,12 @@ $(document).scroll(function () {
         $("li").removeClass("active");
         $($('a[href="#team"]')).parent().addClass("active");
     }
+});
+
+//hover navbar
+$("a > span").hover(function () {
+    $(this).addClass("hoverColor"), function(){
+    $(this).removeClass("hoverColor")};
 });
 
 //animate socialMedia
