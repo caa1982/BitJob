@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Raleway');
 
-canvas {
-	background-color: transparent;
-    position:absolute; 
-    width: 100%;
-    height: 100vh;
-}
-
 .faNav{
     color: white;
 }
@@ -21,7 +14,7 @@ canvas {
 }
 
 .hoverColor{
-    color: rgb(227, 190, 66)!important;
+    border-color: rgb(227, 190, 66);
 }
 
 #navbarLogo{
@@ -58,8 +51,31 @@ canvas {
     justify-content: center; 
 }
 
-.btn{
+.homeButton{
+    border-radius: 25px;
+    border-style: solid;
+    width: 180px;
+    height: 50px;
+    position: relative;
+    background-color: transparent;
+    color: rgb(227, 190, 66);
+    border-color: rgb(227, 190, 66);
+    font-weight: bold;
+    z-index:+1 !important;
+    cursor: pointer;
+}
+
+.homeButton:hover{
+    color: white;
+    border-color: white;
     background-color: rgb(227, 190, 66);
+}
+
+#hatHome{
+    width: 5%;
+    position: absolute;
+    top:-10%;
+    left:0;
 }
 
 #logoHome{
@@ -173,8 +189,6 @@ i > span{
 .faTeam:hover{
     color: rgb(227, 190, 66);;
 }
-
-
 
 #teamMember > img{
     width: 140px;
