@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //set height of of image for PC-Pilote animation
-    $('.alphaPreviewNext').attr("style", "height:"+ $('.alphaPreview').height()+"px");
+    $('.alphaPreviewNext').attr("style", "height:" + $('.alphaPreview').height() + "px");
     animatedCss();
 
 });
@@ -54,19 +54,25 @@ $(document).scroll(function () {
     var settings = function (set) {
         if (set === "white") {
             $(".nav-link").attr('style', 'color:white !important');
+            $(".navbar").attr('style', 'background:#153354 !important');;
             $(".faNav").attr('style', 'color:white !important');
             $(".dropdown-item").attr('style', 'color:white !important');
             $("#navbarLogo").attr('src', 'img/Bitjob_logo_transparant.png');
         }
         else {
             $(".nav-link").attr('style', 'color:#153354 !important');
+            $(".navbar").attr('style', 'background:white !important');
             $(".faNav").attr('style', 'color:#153354 !important');
             $(".dropdown-item").attr('style', 'color:#153354 !important');
             $("#navbarLogo").attr('src', 'img/Bitjob_logo.png');
         }
     };
     if (scroll_start >= blue[0] && scroll_start < white[3]) {
-        settings("white");
+        $(".nav-link").attr('style', 'color:white !important');
+        $(".navbar").attr('style', 'background:url("img/3dBackground.webp")no-repeat cover fixed');
+        $(".faNav").attr('style', 'color:white !important');
+        $(".dropdown-item").attr('style', 'color:white !important');
+        $("#navbarLogo").attr('src', 'img/Bitjob_logo_transparant.png');
         $("li").removeClass("active");
         $($('a[href="#home"]')).parent().addClass("active");
     } else if (scroll_start >= blue[0] && scroll_start < white[0]) {
@@ -93,15 +99,15 @@ $(document).scroll(function () {
         $($('a[href="#team"]')).parent().addClass("active");
     }
 
-    
-    
+
+
     if (scroll_start < white[3] + white[3] / 2 && flag === true) {
-        flag = false;  
+        flag = false;
         $('.alphaPreview').animate({ top: blue[0] }, 1000, "linear");
     } else if (scroll_start > white[3] + white[3] / 2 && flag === false) {
         flag = true;
         $('.alphaPreview').animate({ top: white[3] }, 1000, "linear");
-    } 
+    }
 });
 
 

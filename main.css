@@ -5,7 +5,11 @@
 }
 
 .navbar{
-    opacity: 1 !important;
+    background: url("img/3dBackground.webp")no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .nav-link{
