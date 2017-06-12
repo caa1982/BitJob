@@ -1,5 +1,6 @@
 $(document).ready(function () {
-
+    //set height of of image for PC-Pilote animation
+    $('.alphaPreviewNext').attr("style", "height:"+ $('.alphaPreview').height()+"px");
     animatedCss();
 
 });
@@ -45,8 +46,9 @@ function animatedCss() {
 }
 
 //Scroll change color and active link
+var flag = false;
 $(document).scroll(function () {
-    var white = [$('#whitepaper').position().top, $('#crowdfund').position().top, $('#team').position().top];
+    var white = [$('#whitepaper').position().top, $('#crowdfund').position().top, $('#team').position().top, $('#learnMore').position().top];
     var blue = [$('#home').position().top, $('#platform').position().top, $('#roadmap').position().top];
     var scroll_start = $(this).scrollTop();
     var settings = function (set) {
@@ -63,10 +65,12 @@ $(document).scroll(function () {
             $("#navbarLogo").attr('src', 'img/Bitjob_logo.png');
         }
     };
-    if (scroll_start >= blue[0] && scroll_start < white[0]) {
+    if (scroll_start >= blue[0] && scroll_start < white[3]) {
         settings("white");
         $("li").removeClass("active");
         $($('a[href="#home"]')).parent().addClass("active");
+    } else if (scroll_start >= blue[0] && scroll_start < white[0]) {
+        settings("");
     } else if (scroll_start >= white[0] && scroll_start < blue[1]) {
         settings("");
         $("li").removeClass("active");
@@ -88,12 +92,26 @@ $(document).scroll(function () {
         $("li").removeClass("active");
         $($('a[href="#team"]')).parent().addClass("active");
     }
+
+    
+    
+    if (scroll_start < white[3] + white[3] / 2 && flag === true) {
+        flag = false;  
+        $('.alphaPreview').animate({ top: blue[0] }, 1000, "linear");
+    } else if (scroll_start > white[3] + white[3] / 2 && flag === false) {
+        flag = true;
+        $('.alphaPreview').animate({ top: white[3] }, 1000, "linear");
+    } 
 });
+
+
 
 //hover navbar
 $("a > span").hover(function () {
-    $(this).addClass("hoverColor")}, function(){
-    $(this).removeClass("hoverColor")}
+    $(this).addClass("hoverColor")
+}, function () {
+    $(this).removeClass("hoverColor")
+}
 );
 
 //animate socialMedia
@@ -107,12 +125,9 @@ $("#homeContainer > .btn").on("mouseover", function () {
 });
 
 //button open link
-$("#homeContainer > .btn").click(function () {
+$("#homeContainer > .homeButton").click(function () {
     if (this.id === "alpha") {
         window.open("http://pilot.bitjob.io/pages/index.html");
-    }
-    else {
-        window.open("https://drive.google.com/file/d/0B6VVmGzOdFPBeDVpWVE4Y2xubFE/view");
     }
 });
 
