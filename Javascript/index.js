@@ -106,6 +106,7 @@ $(document).scroll(function () {
         $('.alphaPreview').animate({ top: blue[0] }, 1000, "linear");
     } else if (scroll_start > white[3] + white[3] / 2 && flag === false) {
         flag = true;
+        console.log(white[3])
         $('.alphaPreview').animate({ top: white[3] }, 1000, "linear");
     }
 });
