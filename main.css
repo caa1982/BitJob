@@ -423,6 +423,10 @@ i > span{
 }
 
 @media screen and (max-width: 1140px) {
+    
+    .alphaPreview > img{
+        width: 50%;
+    }
 
      #teamContainer{
         margin-top: 12vh;
