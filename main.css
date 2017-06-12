@@ -128,7 +128,8 @@ i > span{
 }
 
 .alphaPreview > img{
-    width: 30%;
+    height: 40vh;
+    width: 40vw;
 }
 
 #learnMoreContainer{
