@@ -1,37 +1,38 @@
 $(document).ready(function () {
     //set height of of image for PC-Pilote animation
     $('.alphaPreviewNext').attr("style", "height:" + $('.alphaPreview').height() + "px");
+    $(".flip").flip();
     animatedCss();
-
+    scrollDown();
 });
-
-$(".flip").flip();
 
 //scroll down
-function filter(string) {
-    return string
-        .replace(/^\//, '')
-        .replace(/(index|default)\.[a-zA-Z]{3,4}$/, '')
-        .replace(/\/$/, '');
-}
-$('[href*="#"]').each(function () {
-    if (filter(location.pathname) == filter(this.pathname) &&
-        location.hostname == this.hostname &&
-        this.hash.replace(/#/, '')) {
-        var $targetId = $(this.hash),
-            $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
-        var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-        if ($target) {
-            var targetOffset = $target.offset().top;
-            $(this).click(function () {
-                $('html, body').animate({
-                    scrollTop: targetOffset
-                }, 1000);
-                return false;
-            });
-        }
+function scrollDown() {
+    function filter(string) {
+        return string
+            .replace(/^\//, '')
+            .replace(/(index|default)\.[a-zA-Z]{3,4}$/, '')
+            .replace(/\/$/, '');
     }
-});
+    $('[href*="#"]').each(function () {
+        if (filter(location.pathname) == filter(this.pathname) &&
+            location.hostname == this.hostname &&
+            this.hash.replace(/#/, '')) {
+            var $targetId = $(this.hash),
+                $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+            if ($target) {
+                var targetOffset = $target.offset().top;
+                $(this).click(function () {
+                    $('html, body').animate({
+                        scrollTop: targetOffset
+                    }, 1000);
+                    return false;
+                });
+            }
+        }
+    });
+}
 
 //add animateCss to jquery
 function animatedCss() {
@@ -44,6 +45,7 @@ function animatedCss() {
         }
     });
 }
+
 
 //Scroll change color and active link
 var flag = false;
@@ -101,15 +103,19 @@ $(document).scroll(function () {
 
 
 
-    if (scroll_start < white[3] + white[3] / 2 && flag === true) {
-        flag = false;
-        $('.alphaPreview').animate({ top: blue[0] }, 1000, "linear");
-    } else if (scroll_start > white[3] + white[3] / 2 && flag === false) {
-        flag = true;
-        console.log(white[3])
-        $('.alphaPreview').animate({ top: white[3] }, 1000, "linear");
+    if (scroll_start <  white[3] + (white[3] / 2) && flag === true) {
+        $('.alphaPreview').animate({ top: blue[0] }, 1000, "linear", function(){
+            console.log("hi")
+            flag = false;
+        });
+    } else if (scroll_start > white[3] +  (white[3] / 2.8) && flag === false) {
+        $('.alphaPreview').animate({ top: white[3] }, 500, "linear", function(){
+            console.log("hi")
+            flag = true;
+        });
     }
 });
+
 
 
 

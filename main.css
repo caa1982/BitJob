@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Raleway');
 
+body{
+    height: 100%;
+}
+
 .faNav{
     color: white;
 }
@@ -118,25 +122,18 @@ i > span{
     width: 100%;
     height: 100vh;
     background-color: white;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
+.alphaPreview{
+    margin-top: 6%;
+    z-index:+1 !important;
+}
 .alphaPreview > img{
     width: 40%;
 }
 
-#learnMoreContainer{
-    margin-bottom: 3%;
-}
-
 .alphaPreview > .LearnMoretitle{
-    margin-top:5%;
     color: #153354;
     font-size: 60px;
     font-family: 'Bad Script', cursive;
@@ -179,10 +176,6 @@ i > span{
     background-color: rgb(227, 190, 66);
 }
 
-.alphaPreviewNext{
-    margin: 2%;
-}
-
 #learnMorePlatform{
     border-radius: 25px;
     border-style: solid;
@@ -203,15 +196,13 @@ i > span{
 
 #learnEvenMore{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: white;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+   
+}
+
+.alphaPreviewNext{
+     margin-top: 6%;
 }
 
 .paragraphLearnMore{
@@ -282,13 +273,10 @@ i > span{
     height: 100vh;
     background-color: white;
     color: #153354;
-    position: absolute;
-    width: 100%;
-    min-height: 100%;
     }
 
 #teamContainer{
-    margin-top: 7%;
+    height: 100%;
     }
 
 #cardContainer{
@@ -428,9 +416,6 @@ i > span{
 }
 
 @media screen and (max-width: 1140px) {
-    .alphaPreview > img{
-    display: none;
-}
      #teamContainer{
         margin-top: 12vh;
     }
@@ -442,10 +427,6 @@ i > span{
 }
 
 @media screen and (max-width: 480px) {
-
-    canvas {
-        display: none;
-    }
 
     .faNav{
         margin-left: 10px;
