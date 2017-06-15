@@ -432,11 +432,11 @@ i > span{
         margin-left: 10px;
     }
 
-    #homeContainer > h1{
+    .title, #homeContainer > h1{
         font-size: 25px;
     }
 
-    #homeContainer > p{
+    .text, #homeContainer > p{
         font-size: 10px;
     }
 
