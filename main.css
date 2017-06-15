@@ -32,7 +32,7 @@ body {
 }
 
 .title{
-    font-size: 4.5vw;
+    font-size: 65px;
     font-family: 'Bad Script', cursive;
     color: #153354;
 }
@@ -432,12 +432,12 @@ i > span{
         margin-left: 10px;
     }
 
-    .title, #homeContainer > h1{
-        font-size: 25px;
+     .title, .titleWhite, #homeContainer > h1{
+        font-size: 25px !important;
     }
 
-    .text, #homeContainer > p{
-        font-size: 10px;
+    .text, .textWhite, #homeContainer > p{
+        font-size: 10px !important;
     }
 
     #homeContainer{
