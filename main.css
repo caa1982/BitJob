@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Raleway');
 
-body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 .faNav{
@@ -28,6 +29,39 @@ body{
 #navbarLogo{
     height: 27px;
     width: auto;
+}
+
+.title{
+    font-size: 4.5vw;
+    font-family: 'Bad Script', cursive;
+    color: #153354;
+}
+
+.text{
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #153354;
+}
+
+.titleWhite{
+    font-size: 4.5vw;
+    font-family: 'Bad Script', cursive;
+    color: white;
+}
+
+.textWhite{
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+.sectionContainer{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .dropdown-menu{
@@ -96,7 +130,6 @@ body{
 
 #homeContainer{
     color: white;
-    position:absolute;
 }
 
 h1 {
@@ -120,13 +153,12 @@ i > span{
 
 #learnMore{
     width: 100%;
-    height: 100vh;
+    height: inherit !important;
     background-color: white;
     
 }
 
 .alphaPreview{
-    margin-top: 6%;
     z-index:+1 !important;
 }
 .alphaPreview > img{
@@ -196,13 +228,9 @@ i > span{
 
 #learnEvenMore{
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: white;
    
-}
-
-.alphaPreviewNext{
-     margin-top: 6%;
 }
 
 .paragraphLearnMore{
@@ -213,60 +241,43 @@ i > span{
 
 #whitepaper{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: white;
 }
 
 #platform{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #153354;
 }
 
 
 #crowdfund{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: white;
 }
 
+
+/* ROADMAP SECTION */
 #roadmap{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #153354;
     color: white;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
 }
 
-#roadmapContainer{
-    width: 100vw; 
-    height: auto;
-}
-
-#roadmapContainer > img{
-    width: 90vw; 
-    height: auto;   
-    margin: auto;
-}
-
-#roadmapContainer > hr{
+#roadmap > .sectionContainer > hr{
     border: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
     height: 1px;
     width: 60vw;
     color: white;
     background-color: white;
 }
 
-#roadmapContainer > img{
-    margin-top: 4%;
-}
-
+/* TEAM SECTION */
 
 #team{
     width: 100%;
@@ -274,14 +285,6 @@ i > span{
     background-color: white;
     color: #153354;
     }
-
-#teamContainer{
-    height: 100%;
-    }
-
-#cardContainer{
-    margin-top: 3%;
-    } 
 
 .faTeam{
     color: #153354;
@@ -416,9 +419,6 @@ i > span{
 }
 
 @media screen and (max-width: 1140px) {
-     #teamContainer{
-        margin-top: 12vh;
-    }
 
     .faNav{
         margin-left: 10px;

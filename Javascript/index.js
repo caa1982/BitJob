@@ -51,8 +51,12 @@ function animatedCss() {
 var flag = false;
 $(document).scroll(function () {
     var white = [$('#whitepaper').position().top, $('#crowdfund').position().top, $('#team').position().top, $('#learnMore').position().top];
+    white = white.map(function(el){return Math.floor(el)});
     var blue = [$('#home').position().top, $('#platform').position().top, $('#roadmap').position().top];
-    var scroll_start = $(this).scrollTop();
+    blue = blue.map(function(el){return Math.floor(el)});
+    var scroll_start = $(this).scrollTop()+1;
+    console.log(scroll_start);
+    console.log(blue);
     var settings = function (set) {
         if (set === "white") {
             $(".nav-link").attr('style', 'color:white !important');
@@ -103,17 +107,14 @@ $(document).scroll(function () {
 
 
 
-    if (scroll_start <  white[3] + (white[3] / 2) && flag === true) {
-        $('.alphaPreview').animate({ top: blue[0] }, 1000, "linear", function(){
-            console.log("hi")
-            flag = false;
-        });
-    } else if (scroll_start > white[3] +  (white[3] / 2.8) && flag === false) {
-        $('.alphaPreview').animate({ top: white[3] }, 500, "linear", function(){
-            console.log("hi")
-            flag = true;
-        });
+    if (scroll_start < white[3] + (white[3] / 2) && flag === true) {
+        $('.alphaPreview').animate({top: blue[0]}, 1000, "linear");
+        flag=false;
+    } else if (scroll_start > white[3] + (white[3] / 2) && flag === false) {
+        $('.alphaPreview').animate({top: white[3]}, 1000, "linear");
+        flag=true;
     }
+
 });
 
 
