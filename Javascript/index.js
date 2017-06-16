@@ -133,11 +133,6 @@ $(".faNav").on("mouseover", function () {
     $(this).animateCss("rubberBand");
 });
 
-//button mouseover animation
-$("#homeContainer > .btn").on("mouseover", function () {
-    $(this).animateCss("rubberBand");
-});
-
 //button open link
 $("#homeContainer > .homeButton").click(function () {
     if (this.id === "alpha") {
@@ -158,4 +153,11 @@ $('.teamSelect').on('click', function () {
     $("." + this.id).removeClass("hidden");
 });
 
+//TimeCircles
+
+$("#CountDownTimer").TimeCircles(); 
+
+$(window).resize(function(){
+    $("#CountDownTimer").TimeCircles().rebuild();
+});
 

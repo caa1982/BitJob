@@ -9,14 +9,16 @@
       <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
             crossorigin="anonymous">
-      <!-- Boostrap Material Design CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Boostrap Material Design CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
       <!-- Custom CSS -->
       <link rel="stylesheet" href="main.css">
       <!-- Animate.css -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <!-- TimeCircles -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timecircles/1.5.3/TimeCircles.css">
 
 </head>
 
@@ -82,7 +84,7 @@
                   <img id="logoHome" src="img/Bitjob_logo_transparant.png">
                   <h1>Reshaping Students Freedom <br> to Earn a Living</h1>
                   <p>A Decentralized P2P Students Marketplace for Online short-term Jobs, <br><b><i>Powered by <span>Ethereum</span> Blockchain</i></b></p>
-                  <a href="#learnMore"><button type="button" class="homeButton">Learn More</button></a>
+                  <button type="button" class="homeButton"><a href="#learnMore">Learn More</a></button>
                   <button id="alpha" type="button" class="homeButton">BitJob Pilote</button>
             </div>
       </section>
@@ -98,15 +100,14 @@
                         </div>
                         <div class="row">
                               <div id="learnMoreContainer" class="col text-center">
-                                    <p class="LearnMoreSubtitle">Join our Alpha Testers</p>
-                                    <button id="learnMoreButton" type="button">ENTRANCE</button>
-                                    <a href="#learnEvenMore"><i class="fa fa-arrow-down"></i></a>
+                                    <p class="title">Join our Alpha Testers</p>
+                                    <button id="learnMoreButton" class="btn btn-indigo" type="button">Entrance</button>
                               </div>
                         </div>
                         <div class="row text-center">
                               <div id="learnMoreContainer2" class="col">
-                                    <p class="LearnMoretitle">bitJob is an ambitious and social project, based on Blockchain technology</p>
-                                    <p class="LearnMoreSubtitle"> Aimed at revolutionizing the way students make a living and gain occupational experience
+                                    <p class="title">bitJob is an ambitious and social project, based on Blockchain technology</p>
+                                    <p class="text"> Aimed at revolutionizing the way students make a living and gain occupational experience
                                           while still studying. bitJob will give students the opportunity to receive immediate
                                           payment for their abilities from professional employers and to sharpen their skills
                                           while enriching their dynamic résumé,anytime & anywhere!</p>
@@ -123,8 +124,7 @@
                         </div>
                         <div class="row text-center">
                               <div class="col">
-                                    <a href="#platform"><button id="learnMorePlatform" type="button">Learn more</button></a>
-                                    <a href="#learnMore"><i class="fa fa-arrow-up"></i></a>
+                                    <a href="#platform"><button id="learnMorePlatform" class="btn btn-indigo" type="button">Learn more</button></a>
                               </div>
                         </div>
                         <div class="row text-center">
@@ -173,7 +173,7 @@
                         have more free time than they do spare cash.</p>
                   <img src="img/Bitjob_logo.png">
                   <p class="text">Read our Formal business outline</p>
-                  <button id="learnMorePlatform" type="button">whitepaper</button>
+                  <button id="learnMorePlatform" class="btn btn-indigo" type="button">whitepaper</button>
             </div>
       </section>
 
@@ -184,19 +184,62 @@
                         build this great application that removes the need to blindly trust server administrators. Thanks
                         to its transparent properties, we now have strong Authentication, Identity, Verifiability, Voting,
                         Reputation and micro-transactions for our Payments and affiliates fees distribution.</p>
+                  <img src="img/ETH.png">
             </div>
       </section>
 
-      <section id="crowdfund" class="text-center">
+      <section id="crowdfund">
             <div class="sectionContainer">
-                  <p class="title">Student Coin (STU) CrowdSale</p>
-                  <p class="text">We are building the first decentralized platform for Short-Term Online Jobs, Powered by a Cryptographic
-                        token economy. bitJob Student Coin: STU will be purchased or sold with real money.</p>
-                  <p class="text">All our contributors will be eligible to receive bitJob STU Tokens, by participating in our Crowdfund Campaign
-                        Planned for September 2017. Don't miss a chance to support a revolutionary project!</p>
-                  <p class="title">Pre-Sale Starts on August 2nd, 2017</p>
-                  <p class="title">Subscribe for Pre-Sale updates!</p>
+                  <p class="title text-center">Student Coin (STU) CrowdSale</p>
+                  <hr>
+                  <p class="text text-center">We are building the first decentralized platform for Short-Term Online Jobs, Powered by a Cryptographic
+                        token economy. <br> bitJob Student Coin: <b>STU</b> will be purchased or sold with real money.</p>
+                  <p class="text text-center">All our contributors will be eligible to receive bitJob <b>STU Tokens</b>, by participating in our Crowdfund
+                        Campaign Planned for <b>September 2017</b>. <br><b>Don't miss a chance to support a revolutionary project!</b></p>
+                  <p class="title text-center margin-top">Pre-Sale Starts on August 2nd, 2017</p>
+                  <hr>
+                  <div id='CountDownTimer' data-date="2017-08-02 00:00:00"> </div>
+                  <p class="title text-center margin-top">Subscribe for Pre-Sale updates!</p>
+                  <hr>
+                  <div class="container">
+                        <div class="row">
+                              <div class="col"></div>
+                              <div class="col">
+                                    <!--Form with header-->
+                                    <div class="card">
+                                          <div class="card-block">
+
+                                                <!--Header-->
+                                                <div class="text-center">
+                                                      <h3 class="textSubscribe"><i class="fa fa-pencil"></i> Subscribe:</h3>
+                                                      <hr class="mt-2 mb-2">
+                                                </div>
+
+                                                <!--Body-->
+                                                <div class="md-form">
+                                                      <i class="fa fa-user prefix"></i>
+                                                      <input type="text" id="form3" class="form-control">
+                                                      <label class="textSubscribe" for="form3">Your name</label>
+                                                </div>
+                                                <div class="md-form">
+                                                      <i class="fa fa-envelope prefix"></i>
+                                                      <input type="text" id="form2" class="form-control">
+                                                      <label class="textSubscribe" for="form2">Your email</label>
+                                                </div>
+                                                <div class="text-center">
+                                                      <button id="SubscribeButton" class="btn btn-indigo">Subscribe</button>
+                                                </div>
+
+                                          </div>
+                                    </div>
+                                    <!--/Form with header-->
+                              </div>
+                              <div class="col"></div>
+                        </div>
+                  </div>
+
             </div>
+
       </section>
 
       <section id="roadmap">
@@ -217,7 +260,7 @@
                         <div class="row">
                               <div class="col"><span id="coreTeam" class="teamSelect">Core Team</span></div>
                               <div class="col"><span id="founders" class="teamSelect box">Founders</span></div>
-                              <div class="col"><span id="advasoryBoard" class="teamSelect">Advasory Board</span></div>
+                              <div class="col"><span id="advisoryBoard" class="teamSelect">Advisory Board</span></div>
                         </div>
                         <hr>
                         <div id="cardContainer">
@@ -633,7 +676,7 @@
                                           </div>
                                     </div>
                               </div>
-                              <div class="row advasoryBoard hidden">
+                              <div class="row advisoryBoard hidden">
                                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                                           <div class="flip mx-auto">
                                                 <div class="front">
@@ -949,6 +992,8 @@
 
       <!-- Jquery  -->
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <!-- TimeCircles -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/timecircles/1.5.3/TimeCircles.min.js"></script>
       <!-- Flip Javascript -->
       <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
       <!-- Bootstrap tooltips -->
@@ -962,8 +1007,7 @@
       <script type="text/javascript" src="Javascript/index.js"></script>
       <!-- Sketch.js -->
       <script type="text/javascript" src="https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js"></script>
-      <!-- Custom Animation Javascript -->
-      <script type="text/javascript" src="Javascript/fallingHat.js"></script>
+
 </body>
 
 </html>

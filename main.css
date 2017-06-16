@@ -38,7 +38,7 @@ body {
 }
 
 .text{
-    font-size: 2vw;
+    font-size: 25px;
     font-family: 'Raleway', sans-serif;
     margin-left: 10%;
     margin-right: 10%;
@@ -46,13 +46,13 @@ body {
 }
 
 .titleWhite{
-    font-size: 4.5vw;
+    font-size: 65px;
     font-family: 'Bad Script', cursive;
     color: white;
 }
 
 .textWhite{
-    font-size: 2vw;
+    font-size: 25px;
     font-family: 'Raleway', sans-serif;
     margin-left: 10%;
     margin-right: 10%;
@@ -161,29 +161,24 @@ i > span{
 .alphaPreview{
     z-index:+1 !important;
 }
+
 .alphaPreview > img{
-    width: 40%;
+    width: 30vw;
 }
 
-.alphaPreview > .LearnMoretitle{
+#learnMoreContainer > .title{
     color: #153354;
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Bad Script', cursive;
 }
 
-#learnMoreContainer > .LearnMoreSubtitle{
-    color: #153354;
-    font-size: 30px;
-    font-family: 'Raleway', sans-serif;
-}
-
-#learnMoreContainer2 > .LearnMoreSubtitle{
+#learnMoreContainer2 > .text{
     color: #153354;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
 }
 
-#learnMoreContainer2 > .LearnMoretitle{
+#learnMoreContainer2 > .title{
     color: #153354;
     font-size: 25px;
     font-family: 'Bad Script', cursive;
@@ -191,39 +186,37 @@ i > span{
 } 
 
 #learnMoreButton{
-    border-radius: 25px;
-    border-style: solid;
-    width: 180px;
-    height: 50px;
-    background-color: transparent;
-    color: rgb(227, 190, 66);
-    border-color: rgb(227, 190, 66);
-    font-weight: bold;
+    border-radius: 25px !important;
+    border-style: solid !important;
+    width: 180px !important;
+    height: 50px !important;
+    background-color: transparent !important;
+    color: #153354 !important;
+    font-weight: bold !important;
+    font-size: 16px;
     cursor: pointer;
 }
 
 #learnMoreButton:hover{
-    color: white;
-    border-color: white;
-    background-color: rgb(227, 190, 66);
+    color: white !important;
+    background-color: #153354 !important;
 }
 
 #learnMorePlatform{
-    border-radius: 25px;
-    border-style: solid;
-    width: 180px;
-    height: 50px;
-    background-color: transparent;
-    color: rgb(227, 190, 66);
-    border-color: rgb(227, 190, 66);
-    font-weight: bold;
+    border-radius: 25px !important;
+    border-style: solid !important;
+    width: 180px !important;
+    height: 50px !important;
+    background-color: transparent !important;
+    color: #153354 !important;
+    font-weight: bold !important;
+    font-size: 16px;
     cursor: pointer;
 }
 
 #learnMorePlatform:hover{
-    color: white;
-    border-color: white;
-    background-color: rgb(227, 190, 66);
+    color: white !important;
+    background-color: #153354 !important;
 }
 
 #learnEvenMore{
@@ -258,6 +251,42 @@ i > span{
     background-color: white;
 }
 
+.sectionContainer > .text {
+    font-size: 23px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#crowdfund > .sectionContainer > hr{
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 1px;
+    width: 60vw;
+    color: #153354;
+    background-color: #153354;
+}
+
+.textSubscribe{
+    font-family: 'Bad Script', cursive;
+    color: #153354;
+    font-size: 30px;
+}
+
+.blue{
+    color: #153354;
+}
+
+.margin-top{
+    margin-top: 5%;
+}
+
+#CountDownTimer{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* ROADMAP SECTION */
 #roadmap{
@@ -275,6 +304,28 @@ i > span{
     width: 60vw;
     color: white;
     background-color: white;
+}
+
+.card{
+    border-radius: 25px !important;
+    border-style: solid !important;
+}
+
+#SubscribeButton{
+    border-radius: 25px !important;
+    border-style: solid !important;
+    width: 180px !important;
+    height: 50px !important;
+    background-color: transparent !important;
+    color: #153354 !important;
+    font-weight: bold !important;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#SubscribeButton:hover{
+    color: white !important;
+    background-color: #153354 !important;
 }
 
 /* TEAM SECTION */
@@ -417,6 +468,7 @@ i > span{
 .playingCards{
     width: 40px;
 }
+
 
 @media screen and (max-width: 1140px) {
 
