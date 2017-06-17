@@ -55,8 +55,7 @@ $(document).scroll(function () {
     var blue = [$('#home').position().top, $('#platform').position().top, $('#roadmap').position().top];
     blue = blue.map(function(el){return Math.floor(el)});
     var scroll_start = $(this).scrollTop()+1;
-    console.log(scroll_start);
-    console.log(blue);
+    
     var settings = function (set) {
         if (set === "white") {
             $(".nav-link").attr('style', 'color:white !important');
@@ -103,16 +102,6 @@ $(document).scroll(function () {
         settings("");
         $("li").removeClass("active");
         $($('a[href="#team"]')).parent().addClass("active");
-    }
-
-
-
-    if (scroll_start < white[3] + (white[3] / 2) && flag === true) {
-        $('.alphaPreview').animate({top: blue[0]}, 1000, "linear");
-        flag=false;
-    } else if (scroll_start > white[3] + (white[3] / 2) && flag === false) {
-        $('.alphaPreview').animate({top: white[3]}, 1000, "linear");
-        flag=true;
     }
 
 });
