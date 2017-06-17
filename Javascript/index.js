@@ -140,6 +140,11 @@ $('.teamSelect').on('click', function () {
     $(this).addClass('box');
     $("#cardContainer").children().addClass("hidden");
     $("." + this.id).removeClass("hidden");
+    if(this.id === "founders"){
+        $('#team').attr('style', 'height: 100vh');
+    } else {
+        $('#team').attr('style', 'height: 100%');
+    }
 });
 
 //TimeCircles
