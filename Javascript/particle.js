@@ -61,7 +61,6 @@ function canvas() {
       sketch.beginPath();
       sketch.arc(this.x, this.y, this.radius, 0, TWO_PI);
       sketch.closePath();
-      sketch.fillStyle = 'hsla(' + random(0, 120)  + ', 100%, 47%, 1)';
       sketch.fill();
       return sketch.stroke();
     }
