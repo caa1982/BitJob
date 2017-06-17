@@ -608,6 +608,7 @@ i > span{
 
 .footIcon{
     color:#153354;
+    font-size: 25px;
 }
 
 .footIcon:hover{
@@ -659,6 +660,10 @@ i > span{
         width: 100%;
         height: 100%;
     }
-    
+
+    .list-group{
+    display:block;
+    }
+
 }
 
