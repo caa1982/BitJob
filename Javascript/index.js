@@ -98,10 +98,14 @@ $(document).scroll(function () {
         settings("white");
         $("li").removeClass("active");
         $($('a[href="#roadmap"]')).parent().addClass("active");
-    } else {
+    } else if (scroll_start >= white[3] && scroll_start < $('#ourPartners').position().top) {
         settings("");
         $("li").removeClass("active");
         $($('a[href="#team"]')).parent().addClass("active");
+    } else {
+        settings("");
+        $("li").removeClass("active");
+        $($('a[href="#ourPartners"]')).parent().addClass("active");
     }
 
 });
